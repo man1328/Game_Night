@@ -4,29 +4,62 @@ body {
     background-color: black;
     color: white;
 }
+span {
+  background: red;
+  border: 1px solid black;
+}
 .img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.Collage {
-  background-image: url("https://www.dropbox.com/s/1kwn3594tqf5qdt/FUN_COLLAGE.jpg?raw=1");
-  background-color: #cccccc;
-  height: 50em;
-  background-position: center;
+.bg-image {
+  background-image: url("https://www.dropbox.com/s/1kwn3594tqf5qdt/FUN_COLLAGE.jpg?dl=1");
+  height: 50vh;
+  color: white;
+  text-align: center;
+  text-shadow: 1px strong;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 .section p {
     color: orange;
-    text-align: center;
+    background-image: none;
+    background-color: transparent;
+    position: absolute;
+    top: 80px;
+    left: 10px;
 }
 #container--main {
     color: yellow;
     max-width: 700px;
     margin: 0 auto;
     padding: 1em;
+}
+#button {
+     display: block;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+#button a {
+	font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+#button a:hover {
+	font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+#button a img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section--page {
     text-align: center;
@@ -44,6 +77,61 @@ body {
     border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
+}
+h1 span {
+	text-align: center;
+	background-color: #3fb6b2;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+}
+.section {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+	margin-top: 0;
+}
+.submit {
+	background-color: #3fb6b2;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+}
+.submit:hover {
+	background-color: #43a09d;
+}
+textarea {
+	height: 100px;
+}
+input, textarea {
+	margin-bottom: 10px;
+	font-size: 11pt;
+	padding: 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #787575;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+}
+.face {
+	transform: scale(0.4);
+	margin: 0 auto;
+	display: block;
+	margin-top: -35px;
+	margin-bottom: -25px;
 }
 
 @media(max-width:600px){

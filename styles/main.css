@@ -16,8 +16,6 @@ span {
 .bg-image {
   background-image: url("https://www.dropbox.com/s/1kwn3594tqf5qdt/FUN_COLLAGE.jpg?dl=1");
   height: 50vh;
-  filter: opacity(50%);
-  -webkit-filter: opacity(50%);
   color: white;
   text-align: center;
   text-shadow: 1px strong;
